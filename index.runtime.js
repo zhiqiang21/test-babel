@@ -1,11 +1,12 @@
-// import "core-js";
-// import "regenerator-runtime/runtime";
-import 'babel-polyfill'
 
+// import "regenerator-runtime/runtime";
+
+
+// map数据结构
 const testMap = new Map();
 testMap.set('test', 1);
 
-// map数据结构
+
 [1, 2, 3].map((n) => n + 1);
 
 // Array.prototype.includes
@@ -16,6 +17,17 @@ if ([1, 2, 3].includes(2)) {
 
 // URLSearchParams 对象 这是一个Web API接口
 const urlp = new URLSearchParams();
+
+
+// async await
+
+async function testAsync() {
+
+}
+
+const testAwait =async function () {
+    await testAsync()
+}
 
 
 // 使用class来声明类

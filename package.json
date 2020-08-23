@@ -8,12 +8,10 @@
     "build:babel-polyfill": "npx babel ./index.polyfill.entry.js --config-file ./.babel.polyfill.json  --out-file ./dist-polyfill-entry/index.js",
     "//使用babel-polyfill uasage": "",
     "build:babel-polyfill:uasge": "npx babel ./index.polyfill.usage.js --config-file ./.babel.polyfill.usage.json  --out-file ./dist-polyfill-usage/index.js",
-    "//使用usage": "usage 配置 corejs3",
-    "babel:build:usage:corejs3": "npx babel ./index.js --config-file ./.babelrc.cmd.json  --out-file ./dist-corejs3/index.js",
-    "//使用entry": "使用entry 配置 corejs3",
-    "babel:build:usage:entry": "npx babel ./index.js --config-file ./.babel.entry.json  --out-file ./dist-entry/index.js",
-    "//corejs2": "usage 配置 corejs2",
-    "babel:build:corejs2": "npx babel ./index.js --config-file ./.babelrc.cmd.json  --out-file ./dist-corejs2/index.js"
+    "babel:corejs2": "npx babel ./index.corejs2.js --config-file ./.babel.corejs2.json  --out-file ./dist-corejs2/index.js",
+    "babel:corejs3": "npx babel ./index.corejs3.js --config-file ./.babel.corejs3.json  --out-file ./dist-corejs3/index.js",
+    "babel:runtime": "npx babel ./index.runtime.js --config-file ./.babel.runtime.json  --out-file ./dist-runtime/index.js",
+    "babel:runtime:plugin": "npx babel ./index.runtime.js --config-file ./.babel.runtime.plugin.json  --out-file ./dist-runtime-plugin/index.js"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +26,7 @@
     "last 2 versions",
     "> 1%",
     "iOS >= 7",
+    "Android >= 4.1",
     "not ie > 0",
     "not ie_mob  > 0",
     "not dead"

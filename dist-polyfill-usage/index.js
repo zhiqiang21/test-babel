@@ -2,11 +2,19 @@
 
 require("core-js/modules/es6.promise");
 
-require("core-js/modules/es6.object.to-string");
-
 require("core-js/modules/es7.array.includes");
 
 require("core-js/modules/es6.string.includes");
+
+require("core-js/modules/web.dom.iterable");
+
+require("core-js/modules/es6.array.iterator");
+
+require("core-js/modules/es6.object.to-string");
+
+require("core-js/modules/es6.string.iterator");
+
+require("core-js/modules/es6.map");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -14,6 +22,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 // import "regenerator-runtime/runtime";
 // import 'babel-polyfill'
 // map数据结构
+var testMap = new Map();
+testMap.set('test', 1);
 [1, 2, 3].map(function (n) {
   return n + 1;
 }); // Array.prototype.includes

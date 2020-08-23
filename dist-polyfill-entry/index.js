@@ -4,7 +4,9 @@ require("babel-polyfill");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// map数据结构
+var testMap = new Map();
+testMap.set('test', 1); // map数据结构
+
 [1, 2, 3].map(function (n) {
   return n + 1;
 }); // Array.prototype.includes

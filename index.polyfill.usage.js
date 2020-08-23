@@ -3,6 +3,11 @@
 // import 'babel-polyfill'
 
 // map数据结构
+
+const testMap = new Map();
+testMap.set('test', 1);
+
+
 [1, 2, 3].map((n) => n + 1);
 
 // Array.prototype.includes
