@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "//使用babel-polyfill entry": "",
-    "build:babel-polyfill": "npx babel ./index.entry.js --config-file ./.babel.polyfill.json  --out-file ./dist-polyfill-entry/index.js",
+    "build:babel-polyfill": "npx babel ./index.polyfill.entry.js --config-file ./.babel.polyfill.json  --out-file ./dist-polyfill-entry/index.js",
     "//使用babel-polyfill uasage": "",
-    "build:babel-polyfill:uasge": "npx babel ./index.usage.js --config-file ./.babel.polyfill.usage.json  --out-file ./dist-polyfill-usage/index.js",
+    "build:babel-polyfill:uasge": "npx babel ./index.polyfill.usage.js --config-file ./.babel.polyfill.usage.json  --out-file ./dist-polyfill-usage/index.js",
     "//使用usage": "usage 配置 corejs3",
     "babel:build:usage:corejs3": "npx babel ./index.js --config-file ./.babelrc.cmd.json  --out-file ./dist-corejs3/index.js",
     "//使用entry": "使用entry 配置 corejs3",

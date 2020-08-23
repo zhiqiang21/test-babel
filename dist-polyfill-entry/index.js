@@ -1,10 +1,9 @@
 "use strict";
 
+require("babel-polyfill");
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-// import "core-js";
-// import "regenerator-runtime/runtime";
-// import 'babel-polyfill'
 // map数据结构
 [1, 2, 3].map(function (n) {
   return n + 1;
