@@ -9,3 +9,6 @@ if ([1, 2, 3].includes(2)) {
 }
 
 const urlp = new URLSearchParams();
+
+
+console.log(1)
