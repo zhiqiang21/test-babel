@@ -1,0 +1,17 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage",
+                "corejs": 3,
+                "targets": [
+                    "chrome > 60",
+                    "> 1%"
+                ],
+                "shippedProposals": true,
+                "debug": true
+            }
+        ]
+    ]
+}

@@ -11,7 +11,9 @@
     "babel:corejs2": "npx babel ./index.corejs2.js --config-file ./.babel.corejs2.json  --out-file ./dist-corejs2/index.js",
     "babel:corejs3": "npx babel ./index.corejs3.js --config-file ./.babel.corejs3.json  --out-file ./dist-corejs3/index.js",
     "babel:runtime": "npx babel ./index.runtime.js --config-file ./.babel.runtime.json  --out-file ./dist-runtime/index.js",
-    "babel:runtime:plugin": "npx babel ./index.runtime.js --config-file ./.babel.runtime.plugin.json  --out-file ./dist-runtime-plugin/index.js"
+    "babel:runtime:plugin": "npx babel ./index.runtime.js --config-file ./.babel.runtime.plugin.json  --out-file ./dist-runtime-plugin/index.js",
+    "babel:target": "npx babel ./index.targets.js --config-file ./.babel.targets.json  --out-file ./dist-targets-plugin/index.js",
+    "babel:async": "npx babel ./index.async.js --config-file ./.babel.async.json  --out-file ./dist-async-plugin/index.js"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +38,6 @@
     "@babel/runtime": "^7.10.4",
     "@babel/runtime-corejs3": "^7.10.4",
     "babel-polyfill": "^6.26.0",
-    "core-js": "^2.6.11"
+    "core-js": "3"
   }
 }

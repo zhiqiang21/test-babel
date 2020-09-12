@@ -1,39 +1,44 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime-corejs3/helpers/interopRequireDefault");
+require("core-js/modules/es.array.includes");
 
-var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime-corejs3/helpers/classCallCheck"));
+require("core-js/modules/es.array.iterator");
 
-var _urlSearchParams = _interopRequireDefault(require("@babel/runtime-corejs3/core-js-stable/url-search-params"));
+require("core-js/modules/es.array.map");
 
-var _promise = _interopRequireDefault(require("@babel/runtime-corejs3/core-js-stable/promise"));
+require("core-js/modules/es.map");
 
-var _includes = _interopRequireDefault(require("@babel/runtime-corejs3/core-js-stable/instance/includes"));
+require("core-js/modules/es.object.to-string");
 
-var _map = _interopRequireDefault(require("@babel/runtime-corejs3/core-js-stable/instance/map"));
+require("core-js/modules/es.promise");
 
-var _map2 = _interopRequireDefault(require("@babel/runtime-corejs3/core-js-stable/map"));
+require("core-js/modules/es.string.iterator");
 
-var _context, _context2;
+require("core-js/modules/web.dom-collections.iterator");
+
+require("core-js/modules/web.url");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 // import "regenerator-runtime/runtime";
 // map数据结构
-var testMap = new _map2.default();
+var testMap = new Map();
 testMap.set('test', 1);
-(0, _map.default)(_context = [1, 2, 3]).call(_context, function (n) {
+[1, 2, 3].map(function (n) {
   return n + 1;
 }); // Array.prototype.includes
 
-if ((0, _includes.default)(_context2 = [1, 2, 3]).call(_context2, 2)) {
+if ([1, 2, 3].includes(2)) {
   // Promise 对象 Javascript 内置对象
-  new _promise.default(function (resolve, reject) {});
+  new Promise(function (resolve, reject) {});
 } // URLSearchParams 对象 这是一个Web API接口
 
 
-var urlp = new _urlSearchParams.default(); // 使用class来声明类
+var urlp = new URLSearchParams(); // 使用class来声明类
 
 var testBird = function testBird() {
-  (0, _classCallCheck2.default)(this, testBird);
+  _classCallCheck(this, testBird);
+
   this.state = {};
 };
 
