@@ -11,16 +11,19 @@
     "babel:runtime": "npx babel ./index.runtime.js --config-file ./.babel.runtime.json  --out-file ./dist-runtime/index.js",
     "babel:runtime:plugin": "npx babel ./index.runtime.js --config-file ./.babel.runtime.plugin.json  --out-file ./dist-runtime-plugin/index.js",
     "babel:target": "npx babel ./index.targets.js --config-file ./.babel.targets.json  --out-file ./dist-targets-plugin/index.js",
-    "babel:async": "npx babel ./index.async.js --config-file ./.babel.async.json  --out-file ./dist-async-plugin/index.js"
+    "babel:async": "npx babel ./index.async.js --config-file ./.babel.async.json  --out-file ./dist-async-plugin/index.js",
+    "webpack:tree": "npx webpack --config ./webpack/webpack.build.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.10.4",
-    "@babel/core": "^7.10.4",
+    "@babel/core": "^7.12.3",
     "@babel/plugin-transform-runtime": "^7.10.4",
-    "@babel/preset-env": "^7.10.4"
+    "@babel/preset-env": "^7.12.1",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
   },
   "browserslist": [
     "last 2 versions",
@@ -35,6 +38,7 @@
     "@babel/polyfill": "^7.10.4",
     "@babel/runtime": "^7.10.4",
     "@babel/runtime-corejs3": "^7.10.4",
+    "babel-loader": "^8.1.0",
     "babel-polyfill": "^6.26.0",
     "core-js": "3"
   }

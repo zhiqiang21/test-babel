@@ -8,4 +8,6 @@
 
 class TestTarge {
     static name = 'xiaohei';
+
+    static buff = new ArrayBuffer()
 }
