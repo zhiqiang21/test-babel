@@ -17,6 +17,10 @@ if ([1, 2, 3].includes(2)) {
 // URLSearchParams 对象 这是一个Web API接口
 const urlp = new URLSearchParams();
 
+Promise.resolve({
+    a:1,
+    b:2
+})
 
 // 使用class来声明类
 class testBird {
@@ -26,3 +30,4 @@ class testBird {
 }
 
 console.log(1)
+
